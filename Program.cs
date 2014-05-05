@@ -10,6 +10,7 @@ namespace _10001stPrime
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("hello world");
         }
     }
 }
