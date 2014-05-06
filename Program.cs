@@ -11,12 +11,18 @@ namespace _10001stPrime
     {
         static void Main(string[] args)
         {
+            int i = 1;
             ArrayList primelist = new ArrayList();
-            for (long i = num - 1; i > 1; i--)
+            while(primelist.Count < 10001)
             {
+                i++;
                 if (isPrime(i))
+                {
                     primelist.Add(i);
+                    Console.WriteLine(i);
+                }
             }
+            Console.ReadLine();
         }
 
         static bool isPrime(long n)
@@ -25,7 +31,7 @@ namespace _10001stPrime
             {
                 if (n % i == 0)
                     return false;
-                Console.WriteLine("test: " + i);
+                //Console.WriteLine("test: " + i);
             }
             return true;
         }
